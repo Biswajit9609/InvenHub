@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
-
-function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+function Navbar(props) {
 
   return (
     <nav className="navbar w-[90%] flex flex-col lg:flex-row justify-between items-center py-6 lg:py-4 lg:px-10 lg:mt-4 rounded-2xl mx-auto">
@@ -11,10 +8,10 @@ function Navbar() {
         </h1>
       </div>
 
-      {/* Hamburger for mobile */}
       <div
         className="lg:hidden absolute right-8 top-6 cursor-pointer"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        onClick={props.toggleMenuOpen}
+        // onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <div className="space-y-1">
           <span className="block w-6 h-0.5 bg-black"></span>
@@ -26,7 +23,7 @@ function Navbar() {
       {/* Nav Items */}
       <div
         className={`nav-list-container flex-col lg:flex-row gap-6 lg:gap-12 items-center text-lg ${
-          isMenuOpen ? 'flex mt-6' : 'hidden'
+          props.isMenuOpen ? 'flex mt-6' : 'hidden'
         } lg:flex`}
       >
         <a href="#" className="nav-link"><span>Features</span></a>
