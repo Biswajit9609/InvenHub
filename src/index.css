@@ -6,15 +6,15 @@ body{
 :root{
   --logo-Red:#e63946;
 }
+@font-face {
+    font-family: 'Invenhub-Logo';
+    src: url('/src/assets/fonts/PlaypenSansHebrew-VariableFont_wght.ttf');
+}
 /* ===============================================  Navbar  =============================================== */
 
 
 
 /* ----------Typography---------- */
-@font-face {
-    font-family: 'Invenhub-Logo';
-    src: url('/src/assets/fonts/PlaypenSansHebrew-VariableFont_wght.ttf');
-}
 
 .logo{
     font-size: 32px;
@@ -27,15 +27,20 @@ body{
 /* ----------Layout---------- */
 
 
-.navbar{
-    background: rgba(255,255,255,0.5);
--webkit-backdrop-filter: blur(10px);
-backdrop-filter: blur(10px);
-border: 1px solid rgba(255,255,255,0.25);
-    z-index: 1000;
-    position: fixed;
-    top: 7px;
+.navbar {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: 1000;
+  position: fixed;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  transition: all 0.3s ease;
 }
+
 .nav-list-container a span {
   display: inline-flex;
   align-items: center;
@@ -100,4 +105,15 @@ border: 1px solid rgba(255,255,255,0.25);
 
 .get-started-btn:hover {
   color: transparent;
+}
+@media (max-width: 1024px) {
+  .navbar{
+    top: 0px;
+    width: 100%;
+  }
+  .nav-list-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    padding: 10px 20px;
+  }
 }
