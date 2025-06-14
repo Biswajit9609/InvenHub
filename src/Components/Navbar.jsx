@@ -3,9 +3,7 @@ function Navbar(props) {
   return (
     <nav className="navbar w-[90%] flex flex-col lg:flex-row justify-between items-center py-6 lg:py-4 lg:px-10 lg:mt-4 rounded-2xl mx-auto">
       <div className="logo-container logo font text-2xl font-bold">
-        <h1>
-          Inven<span className="text-[var(--logo-Red)]">Hub</span>
-        </h1>
+        <a href="#"><h1>Inven<span className="text-[var(--logo-Red)]">Hub</span></h1></a>
       </div>
       <div
             className="lg:hidden absolute right-8 top-7 cursor-pointer"

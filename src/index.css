@@ -17,8 +17,8 @@ body{
 /* ----------Typography---------- */
 
 .logo{
-    font-size: 32px;
-    font-weight: 500;
+  font-size: 32px;
+  font-weight: 500;
 }
 .font{
   font-family: 'Invenhub-Logo';
@@ -118,6 +118,11 @@ body{
     padding: 10px 20px;
   }
 }
+
+
+/* ===============================================  Landing Page  =============================================== */
+
+
 /* .cta-button {
   cursor: pointer;
   position: relative;
