@@ -113,7 +113,7 @@ body{
     width: 100%;
   }
   .nav-list-container {
-    background-color: rgba(255, 255, 255, 0.85);
+    /* background-color: rgba(255, 255, 255, 0.85); */
     border-radius: 16px;
     padding: 10px 20px;
   }

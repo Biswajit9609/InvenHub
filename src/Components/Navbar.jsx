@@ -17,7 +17,7 @@ function Navbar(props) {
         }
         </div>
       <div
-        className={`nav-list-container flex-col lg:flex-row gap-6 lg:gap-12 items-center text-lg ${
+        className={`nav-list-container flex-col w-full lg:w-auto lg:flex-row gap-6 lg:gap-12 items-center text-lg ${
           props.isMenuOpen ? 'flex mt-6' : 'hidden'
         } lg:flex`}
       >
