@@ -14,16 +14,18 @@ function Landing() {
                 isMenuOpen={isMenuOpen}
             />
             <div className={`flex flex-col lg:flex-row mt-30 ${ isMenuOpen? 'mt-100' : null}`}>
-                <div className="illustration-container w-5/12"><img src={image} alt="" /></div>
-                <div className="text-container w-7/12 text-black flex flex-col lg:justify-center lg:items-center">
+                <div className="illustration-container w-full lg:w-5/12"><img src={image} alt="" /></div>
+                <div className="text-container w-full lg:w-7/12 text-black flex flex-col lg:justify-center items-center">
                     <div className="heading font-semibold">
-                        <h1 className='text-2xl lg:text-8xl'>Your <span className='font text-[var(--logo-Red)]'>Store</span></h1>
-                        <h1 className='lg:text-8xl'> in Your <span className='font text-[var(--logo-Red)]'>Pocket</span></h1>
+                        <h1 className='text-[3.3rem] md:text-8xl md:leading-none leading-7'>Your <span className='font text-[var(--logo-Red)]'>Store</span></h1>
+                        <h1 className='text-[3.3rem] md:text-8xl'> in Your <span className='font text-[var(--logo-Red)]'>Pocket</span></h1>
                     </div>
-                    <div className="subHeading mt-5 flex flex-col items-center">
-                        <h3 className='text-2xl'>Track stock levels, print barcode labels, sell faster, and get </h3>
-                        <h3 className='text-2xl'>AI-powered predictions — from your phone.</h3>
+                    <div className="subHeading mt-5 flex flex-col items-center px-5">
+                        <h3 className='lg:text-2xl'>Track stock levels, print barcode labels, sell faster, and get <span className='lg:block'>AI-powered predictions — from your phone.</span></h3>
                     </div>
+                    {/* <div className='w-[60%] flex justify-end'>
+                        <button className="cta-button font mt-5">{`Get Started →`}</button>
+                    </div> */}
                 </div>
             </div>
             <div className="video-container w-full max-w-7xl bg-[#f1faee] mx-auto my-20 aspect-video">

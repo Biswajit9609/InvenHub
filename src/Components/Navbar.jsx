@@ -7,20 +7,17 @@ function Navbar(props) {
           Inven<span className="text-[var(--logo-Red)]">Hub</span>
         </h1>
       </div>
-
       <div
-        className="lg:hidden absolute right-8 top-6 cursor-pointer"
-        onClick={props.toggleMenuOpen}
-        // onClick={() => setIsMenuOpen(!isMenuOpen)}
-      >
-        <div className="space-y-1">
-          <span className="block w-6 h-0.5 bg-black"></span>
-          <span className="block w-6 h-0.5 bg-black"></span>
-          <span className="block w-6 h-0.5 bg-black"></span>
+            className="lg:hidden absolute right-8 top-7 cursor-pointer"
+            onClick={props.toggleMenuOpen}
+          >
+        {
+        props.isMenuOpen ? 
+          <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/multiply.png" alt="multiply"/>
+          :
+          <img width="30" height="30" src="https://img.icons8.com/sf-black/64/menu.png" alt="menu"/>
+        }
         </div>
-      </div>
-
-      {/* Nav Items */}
       <div
         className={`nav-list-container flex-col lg:flex-row gap-6 lg:gap-12 items-center text-lg ${
           props.isMenuOpen ? 'flex mt-6' : 'hidden'
