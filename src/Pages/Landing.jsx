@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import Navbar from '../Components/Navbar'
-import image from "../assets/Images/freepik__background__25629.png"
+import image from "../assets/Images/freepik__adjust__9790.png"
 function Landing() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     function toggleMenuOpen(){
@@ -14,7 +14,7 @@ function Landing() {
                 isMenuOpen={isMenuOpen}
             />
             <div className={`flex flex-col lg:flex-row mt-30 ${ isMenuOpen? 'mt-100' : null}`}>
-                <div className="illustration-container w-full lg:w-5/12"><img src={image} alt="" /></div>
+                <div className="illustration-container w-full lg:w-5/12"><img src={image} alt="" height="2000px" /></div>
                 <div className="text-container w-full lg:w-7/12 text-black flex flex-col lg:justify-center items-center">
                     <div className="heading font-semibold px-5">
                         <h1 className='text-[3.2rem] md:text-8xl md:leading-none leading-7'>Your <span className='font text-[var(--logo-Red)]'>Store</span></h1>
