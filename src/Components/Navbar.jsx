@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 function Navbar(props) {
 
   return (
     <nav className="navbar w-[90%] flex flex-col lg:flex-row justify-between items-center py-6 lg:py-4 lg:px-10 lg:mt-4 rounded-2xl mx-auto">
       <div className="logo-container logo font text-2xl font-bold">
-        <a href="#"><h1>Inven<span className="text-[var(--logo-Red)]">Hub</span></h1></a>
+        <Link to="/"><h1>Inven<span className="text-[var(--logo-Red)]">Hub</span></h1></Link>
       </div>
       <div
             className="lg:hidden absolute right-8 top-7 cursor-pointer"
@@ -21,10 +22,10 @@ function Navbar(props) {
           props.isMenuOpen ? 'flex mt-6' : 'hidden'
         } lg:flex`}
       >
-        <a href="#" className="nav-link"><span>Features</span></a>
-        <a href="#" className="nav-link"><span>Pricing</span></a>
-        <a href="#" className="nav-link"><span>Login</span></a>
-        <a href="#" className="get-started-btn">Get Started</a>
+        <Link to="#" className="nav-link"><span>Features</span></Link>
+        <Link to="#" className="nav-link"><span>Pricing</span></Link>
+        <Link to="/login" className="nav-link"><span>Login</span></Link>
+        <Link to="#" className="get-started-btn">Get Started</Link>
       </div>
     </nav>
   );
