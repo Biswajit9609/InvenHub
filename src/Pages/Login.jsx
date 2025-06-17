@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 import LoginImage from "../assets/Images/login-illustration.svg"
 function Login() {
   return (
@@ -105,7 +105,7 @@ function Login() {
                 <div className="mt-8 text-center">
                     <p className="text-gray-600">
                         New here? 
-                        <a href="#" className="text-blue-600 hover:text-blue-700 font-light"> Create a account</a>
+                        <Link to="/sign-up" className="text-blue-600 hover:text-blue-700 font-light"> Create a account</Link>
                     </p>
                 </div>
             </div>

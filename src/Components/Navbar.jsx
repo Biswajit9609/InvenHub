@@ -25,7 +25,7 @@ function Navbar(props) {
         <Link to="#" className="nav-link"><span>Features</span></Link>
         <Link to="#" className="nav-link"><span>Pricing</span></Link>
         <Link to="/login" className="nav-link"><span>Login</span></Link>
-        <Link to="#" className="get-started-btn">Get Started</Link>
+        <Link to="/sign-up" className="get-started-btn">Get Started</Link>
       </div>
     </nav>
   );
