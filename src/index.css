@@ -3,6 +3,12 @@ body{
     background-color: #fdfdfd; 
     font-family:"Poppins",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
 :root{
     --Teal-50: #f2fbf9;
     --Teal-100: #d3f4ec;
