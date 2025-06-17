@@ -23,9 +23,9 @@ function Landing() {
                     <div className="subHeading mt-5 flex flex-col items-center px-7">
                         <h3 className='lg:text-2xl'>Track stock levels, print barcode labels, sell faster, and get <span className='lg:block'>AI-powered predictions — from your phone.</span></h3>
                     </div>
-                    {/* <div className='w-[60%] flex justify-end'>
+                    <div className='w-[60%] flex justify-end'>
                         <button className="cta-button font mt-5">{`Get Started →`}</button>
-                    </div> */}
+                    </div>
                 </div>
             </div>
             <div className="video-container w-full max-w-7xl bg-[#f1faee] mx-auto my-20 aspect-video">

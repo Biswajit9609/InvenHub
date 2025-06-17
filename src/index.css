@@ -4,7 +4,8 @@ body{
     font-family:"Poppins",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 :root{
-  --logo-Red:#e63946;
+  --logo-Red:#fa6102;
+  /* --logo-Red:#2a9c8d; */
 }
 @font-face {
     font-family: 'Invenhub-Logo';
@@ -123,7 +124,7 @@ body{
 /* ===============================================  Landing Page  =============================================== */
 
 
-/* .cta-button {
+.cta-button {
   cursor: pointer;
   position: relative;
   padding: 10px 24px;
@@ -159,12 +160,12 @@ body{
   color:white;
   border: 2px solid transparent;
   scale: 1.1;
-  box-shadow: 0 0px 20px #e63946;   ////////////
+  box-shadow: 0 0px 20px #e63946;   
 }
 
 .cta-button:active {
   scale: 1;
-} */
+}
 
 
 @keyframes float {

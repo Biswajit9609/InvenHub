@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 function Navbar(props) {
 
   return (
-    <nav className="navbar w-[90%] flex flex-col lg:flex-row justify-between items-center py-6 lg:py-4 lg:px-10 lg:mt-4 rounded-2xl mx-auto">
+    <nav className="navbar max-w-[70%] flex flex-col lg:flex-row justify-between items-center py-6 lg:py-1 lg:px-10 lg:mt-1 rounded-2xl mx-auto">
       <div className="logo-container logo font text-2xl font-bold">
         <Link to="/"><h1>Inven<span className="text-[var(--logo-Red)]">Hub</span></h1></Link>
       </div>
