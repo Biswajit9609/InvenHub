@@ -9,7 +9,7 @@ function Login() {
             <div className="w-full max-w-md mx-auto">
                 {/* <!-- Logo --> */}
                 <div className="flex items-center mb-10">
-                    <span className="text-4xl font-semibold font">Inven<span className='text-[var(--logo-Red)]'>Hub</span></span>
+                    <span className="text-4xl font-semibold font">Inven<span className='text-[var(--Teal-500)]'>Hub</span></span>
                 </div>
 
                 {/* <!-- Form Header --> */}
@@ -22,7 +22,7 @@ function Login() {
                 <form id="signupForm" className="space-y-6">
                     {/* <!-- Email Field --> */}
                     <div className="space-y-2">
-                        <label for="email" className="block text-sm font-medium text-[var(--logo-Red)]">
+                        <label for="email" className="block text-sm font-medium text-[var(--Teal-500)]">
                             E-mail
                         </label>
                         <div className="relative">
@@ -41,7 +41,7 @@ function Login() {
 
                     {/* <!-- Password Field --> */}
                     <div className="space-y-2">
-                        <label for="password" className="block text-sm font-medium text-[var(--logo-Red)]">
+                        <label for="password" className="block text-sm font-medium text-[var(--Teal-500)]">
                             Password
                         </label>
                         <div className="relative">
@@ -72,7 +72,7 @@ function Login() {
                     {/* <!-- Sign In Button --> */}
                     <button
                         type="submit"
-                        className="w-full bg-[var(--logo-Red)] hover:bg-[#cc2f3c] text-white py-3 rounded-lg font-medium transition-colors duration-200"
+                        className="w-full bg-[var(--Teal-500)] hover:bg-[var(--Teal-600)] text-white py-3 rounded-lg font-medium transition-colors duration-200"
                     >
                         Sign in
                     </button>

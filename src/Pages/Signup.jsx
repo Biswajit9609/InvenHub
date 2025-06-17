@@ -9,7 +9,7 @@ function Signup() {
           <div className="w-full max-w-md mx-auto">
             {/* <!-- Logo --> */}
             <div className="flex items-center mb-10">
-              <span className="text-4xl font-semibold font">Inven<span className='text-[var(--logo-Red)]'>Hub</span></span>
+              <span className="text-4xl font-semibold font">Inven<span className='text-[var(--Teal-500)]'>Hub</span></span>
             </div>
 
             {/* <!-- Form Header --> */}
@@ -23,7 +23,7 @@ function Signup() {
 
               {/* <!-- Email Field --> */}
               <div className="space-y-2">
-                <label htmlFor="email" className="block text-sm font-medium text-[var(--logo-Red)]">
+                <label htmlFor="email" className="block text-sm font-medium text-[var(--Teal-500)]">
                   E-mail
                 </label>
                 <div className="relative">
@@ -39,7 +39,7 @@ function Signup() {
 
               {/* <!-- Password Field --> */}
               <div className="space-y-2">
-                <label htmlFor="password" className="block text-sm font-medium text-[var(--logo-Red)]">
+                <label htmlFor="password" className="block text-sm font-medium text-[var(--Teal-500)]">
                   Password
                 </label>
                 <div className="relative">
@@ -55,7 +55,7 @@ function Signup() {
 
               {/* <!-- Confirm Password Field --> */}
               <div className="space-y-2">
-                <label htmlFor="confirmPassword" className="block text-sm font-medium text-[var(--logo-Red)]">
+                <label htmlFor="confirmPassword" className="block text-sm font-medium text-[var(--Teal-500)]">
                   Confirm Password
                 </label>
                 <div className="relative">
@@ -72,7 +72,7 @@ function Signup() {
               {/* <!-- Sign Up Button --> */}
               <button
                 type="submit"
-                className="w-full bg-[var(--logo-Red)] hover:bg-[#cc2f3c] text-white py-3 rounded-lg font-medium transition-colors duration-200"
+                className="w-full bg-[var(--Teal-500)] hover:bg-[var(--Teal-600)] text-white py-3 rounded-lg font-medium transition-colors duration-200"
               >
                 Sign up
               </button>

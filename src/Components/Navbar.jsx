@@ -4,7 +4,7 @@ function Navbar(props) {
   return (
     <nav className="navbar max-w-[70%] flex flex-col lg:flex-row justify-between items-center py-6 lg:py-1 lg:px-10 lg:mt-1 rounded-2xl mx-auto">
       <div className="logo-container logo font text-2xl font-bold">
-        <Link to="/"><h1>Inven<span className="text-[var(--logo-Red)]">Hub</span></h1></Link>
+        <Link to="/"><h1>Inven<span className="text-[var(--Teal-500)]">Hub</span></h1></Link>
       </div>
       <div
             className="lg:hidden absolute right-8 top-7 cursor-pointer"
