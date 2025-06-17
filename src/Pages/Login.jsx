@@ -1,20 +1,20 @@
 import React from 'react'
-import LoginImage from "../assets/Images/variety-people-multitasking-3d-cartoon-scene.jpg"
+import LoginImage from "../assets/Images/login-illustration.svg"
 function Login() {
   return (
     <>
-        <div className="max-h-[100dvh] flex">
+        <div className="h-[100dvh] flex">
         {/* <!-- Left Column - Form --> */}
-        <div className="flex-1 flex flex-col justify-center px-8 py-12 lg:px-16 xl:px-24 bg-white">
+        <div className="flex-1 flex flex-col justify-center px-8 lg:py-8 lg:px-16 xl:px-24">
             <div className="w-full max-w-md mx-auto">
                 {/* <!-- Logo --> */}
-                <div className="flex items-center mb-16">
+                <div className="flex items-center mb-10">
                     <span className="text-4xl font-semibold font">Inven<span className='text-[var(--logo-Red)]'>Hub</span></span>
                 </div>
 
                 {/* <!-- Form Header --> */}
                 <div className="mb-8">
-                    <h1 className="text-5xl font-bold text-gray-900 mb-7">Welcome back!</h1>
+                    <h1 className="text-5xl font-bold text-gray-900 mb-5">Welcome back!</h1>
                     <p className="text-gray-600 mb-2">Login to your Account.</p>
                 </div>
 
@@ -69,7 +69,7 @@ function Login() {
                     </div>
                     <div className='flex justify-end'><a href="#" className="text-blue-600 hover:text-blue-700 font-light">Forgot password?</a></div>
 
-                    {/* <!-- Sign Up Button --> */}
+                    {/* <!-- Sign In Button --> */}
                     <button
                         type="submit"
                         className="w-full bg-[var(--logo-Red)] hover:bg-[#cc2f3c] text-white py-3 rounded-lg font-medium transition-colors duration-200"
@@ -78,7 +78,7 @@ function Login() {
                     </button>
 
                     {/* <!-- Divider --> */}
-                    <div className="relative my-6">
+                    <div className="relative my-4">
                         <div className="absolute inset-0 flex items-center">
                             <div className="w-full border-t border-gray-300"></div>
                         </div>
@@ -112,7 +112,7 @@ function Login() {
         </div>
 
         {/* <!-- Right Column - Background --> */}
-        <div className="hidden lg:block lg:flex-1 relative overflow-hidden">
+        <div className="hidden lg:block lg:flex-1 overflow-hidden my-auto">
             <img src={LoginImage} alt="" />
         </div>
     </div>

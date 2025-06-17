@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import Navbar from '../Components/Navbar'
-import image from "../assets/Images/freepik__adjust__9790.png"
+import image from "../assets/Images/freepik__background__25629.png"
 function Landing() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     function toggleMenuOpen(){
