@@ -1,6 +1,8 @@
 import {React, useState} from 'react'
 import Navbar from '../Components/Navbar'
 import image from "../assets/Images/freepik__background__25629.png"
+import SmoothScrollWrapper from '../Components/SmoothScrollWrapper'
+import ScrollToTop from '../Components/ScrollToTop'
 function Landing() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     function toggleMenuOpen(){
@@ -13,6 +15,8 @@ function Landing() {
                 toggleMenuOpen={toggleMenuOpen}
                 isMenuOpen={isMenuOpen}
             />
+            <ScrollToTop />
+            <SmoothScrollWrapper>
             <div className={`flex flex-col lg:flex-row mt-30 ${ isMenuOpen? 'mt-100' : null}`}>
                 <div className="illustration-container w-full lg:w-5/12"><img src={image} alt="" height="2000px" /></div>
                 <div className="text-container w-full lg:w-7/12 text-black flex flex-col lg:justify-center items-center">
@@ -28,9 +32,11 @@ function Landing() {
                     </div>
                 </div>
             </div>
+            </SmoothScrollWrapper>
             <div className="video-container w-full max-w-7xl bg-[#f1faee] mx-auto my-20 aspect-video">
                 <iframe
                     className="w-full h-full block"
+                    loading='lazy'
                     src="https://www.youtube.com/embed/5ioh6O-gCGM?autoplay=1&mute=1&modestbranding=1&rel=0"
                     title="YouTube video player"
                     allow="autoplay; encrypted-media"

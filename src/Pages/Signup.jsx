@@ -1,8 +1,12 @@
 import LoginImage from "../assets/Images/Sign up-illustration.svg"
+import SmoothScrollWrapper from "../Components/SmoothScrollWrapper";
+import ScrollToTop from "../Components/ScrollToTop";
 import { Link } from "react-router-dom";
 function Signup() {
   return (
     <>
+      <ScrollToTop/>
+      <SmoothScrollWrapper>
       <div className="h-[100dvh] flex my-10">
         {/* <!-- Left Column - Form --> */}
         <div className="flex-1 flex flex-col justify-center px-8 lg:py-8 lg:px-16 xl:px-24">
@@ -49,7 +53,7 @@ function Signup() {
                     placeholder="••••••••"
                     className="w-full pl-4 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     required
-                  />
+                    />
                 </div>
               </div>
 
@@ -65,7 +69,7 @@ function Signup() {
                     placeholder="••••••••"
                     className="w-full pl-4 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     required
-                  />
+                    />
                 </div>
               </div>
 
@@ -73,7 +77,7 @@ function Signup() {
               <button
                 type="submit"
                 className="w-full bg-[var(--Teal-500)] hover:bg-[var(--Teal-600)] text-white py-3 rounded-lg font-medium transition-colors duration-200"
-              >
+                >
                 Sign up
               </button>
 
@@ -116,6 +120,7 @@ function Signup() {
           <img src={LoginImage} alt="" />
         </div>
       </div>
+    </SmoothScrollWrapper>
     </>
   );
 }
